@@ -1,0 +1,48 @@
+.banner {
+  margin: 40px 0;
+  & .banner__title {
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      content: "";
+      width: 5em;
+      height: 2.5em;
+      border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+      background: #5ccc3e;
+    }
+
+    & .banner__title_top,
+    .banner__title_bottom {
+      display: flex;
+      align-items: center;
+    }
+
+    & .banner__title_bottom span {
+      font-size: 18px;
+    }
+  }
+
+  h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+
+  & .image__container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    margin: 150px 0 300px 0;
+
+
+    & img {
+      position: absolute;
+    }
+  }
+}
+
+.green {
+  color: #5ccc3e;
+}
